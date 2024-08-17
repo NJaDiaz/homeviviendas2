@@ -26,7 +26,7 @@ const NavLinks = () => {
           whileHover="hover"
           variants={linkVariants}
         >
-          <Link href="/#nosotros" aria-current="page">
+          <Link href="./#nosotros" aria-current="page">
             Nosotros
           </Link>
         </motion.div>
@@ -71,7 +71,7 @@ const NavLinks = () => {
           whileHover="hover"
           variants={linkVariants}
         >
-          <Link href="/#proyectos" aria-current="page">
+          <Link href="./#proyectos" aria-current="page">
             Proyectos
           </Link>
         </motion.div>
@@ -82,7 +82,7 @@ const NavLinks = () => {
           whileHover="hover"
           variants={linkVariants}
         >
-          <Link color="foreground" href="/contacto">
+          <Link color="foreground" href="./contacto">
             Contacto
           </Link>
         </motion.div>
