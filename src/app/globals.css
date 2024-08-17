@@ -30,4 +30,50 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* Clases utilitarias personalizadas para los modos claro y oscuro */
+  .bg-light-mode {
+    @apply bg-white text-black;
+  }
+
+  .bg-dark-mode {
+    @apply bg-gray-900 text-white;
+  }
+
+  /* Clase personalizada para encabezados con opacidad */
+  .header-transparent {
+    @apply bg-white;
+  }
+}
+
+/* Clases adicionales para manejar el modo oscuro */
+.dark body {
+  @apply bg-gray-900 text-white;
+}
+
+.dark .bg-white {
+  @apply bg-gray-900 text-white;
+}
+
+.dark .text-black {
+  @apply text-white;
+}
+
+.dark .border-gray-300 {
+  @apply border-gray-700;
+}
+.bg-blur-lg {
+  backdrop-filter: blur(10px);
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.icon-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  display: none;
 }
