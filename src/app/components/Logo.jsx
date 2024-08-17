@@ -1,3 +1,4 @@
+"use client";
 
 import React from "react";
 import { NavbarBrand } from "@nextui-org/react";
