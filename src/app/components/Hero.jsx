@@ -53,7 +53,7 @@ const HeroCarousel = () => {
     <div className="relative h-screen overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('/img/fondos/fondo.jpg')` }}
+        style={{ backgroundImage: `url('./img/fondos/fondo.jpg')` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
