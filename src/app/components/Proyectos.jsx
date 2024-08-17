@@ -8,13 +8,13 @@ export const Proyectos = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
-    "/img/proyectos/1.jpg",
-    "/img/proyectos/2.jpg",
-    "/img/proyectos/4.jpg",
-    "/img/proyectos/5.jpg",
-    "/img/proyectos/6.jpg",
-    "/img/proyectos/8.jpg",
-    "/img/estancia/3.jpg"
+    "./img/proyectos/1.jpg",
+    "./img/proyectos/2.jpg",
+    "./img/proyectos/4.jpg",
+    "./img/proyectos/5.jpg",
+    "./img/proyectos/6.jpg",
+    "./img/proyectos/8.jpg",
+    "./img/estancia/3.jpg"
   ];
 
   const nextSlide = () => {

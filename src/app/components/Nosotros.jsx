@@ -4,7 +4,7 @@ import React from "react";
 const Nosotros = () => {
   return (
     <section id="nosotros" className=" relative overflow-hidden h-full">
-      <div className="relative h-full md:h-full bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/img/fondos/Nosotros.jpg')" }}>
+      <div className="relative h-full md:h-full bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('./img/fondos/Nosotros.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className=" relative p-6 md:p-12 text-white">
           <div className="max-w-3xl mx-auto text-center">

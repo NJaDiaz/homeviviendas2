@@ -5,21 +5,21 @@ import { motion, AnimatePresence } from "framer-motion";
 const chalets = [
   {
     id: 1,
-    image: "/img/productos/Chalets/Clasico.jpg",
+    image: "./img/productos/Chalets/Clasico.jpg",
     title: "Chalet Clásico",
     description: "Diseño tradicional con espacios amplios y confortables, ideal para familias grandes.",
     infoLink: "/chalets/clasico"
   },
   {
     id: 2,
-    image: "/img/productos/Chalets/Minimalista.jpg",
+    image: "./img/productos/Chalets/Minimalista.jpg",
     title: "Chalet Minimalista",
     description: "Estilo moderno y funcional, con líneas limpias y espacios abiertos.",
     infoLink: "/chalets/minimalista"
   },
   {
     id: 3,
-    image: "/img/productos/Chalets/Estancia.jpg",
+    image: "./img/productos/Chalets/Estancia.jpg",
     title: "Chalet Estancia",
     description: "Combinación de diseño moderno y tecnología avanzada para una vida cómoda y eficiente.",
     infoLink: "/chalets/estancia"
