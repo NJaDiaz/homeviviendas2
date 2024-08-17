@@ -6,6 +6,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
+    
     <footer className="bg-white text-black py-8 dark:bg-gray-900 dark:text-gray-300">
       <div className="border-t border-gray-600 my-4 dark:border-gray-700"></div>
       <div className="container mx-auto px-6 lg:px-20">
@@ -48,7 +49,7 @@ const Footer = () => {
               </div>
               <div className="flex justify-center lg:justify-start space-x-4 mt-4">
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/profile.php?id=100083484181892"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-600"
@@ -56,10 +57,10 @@ const Footer = () => {
                   <FaFacebookF className="text-2xl" />
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/home.viviendas/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-600"
+                  className=" items-centertext-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-600"
                 >
                   <FaInstagram className="text-2xl" />
                 </a>

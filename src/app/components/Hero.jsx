@@ -71,7 +71,7 @@ const HeroCarousel = () => {
             {slide.description && (
               <p className="mt-4 text-lg md:text-xl">{slide.description}</p>
             )}
-            <div className="mt-6">
+            <div className="mt-9">
               {slide.icons.length > 0 ? (
                 <div className="flex justify-center gap-4">
                   {slide.icons.map((icon, idx) => (

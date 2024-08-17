@@ -44,9 +44,10 @@ const servicios = [
 
 const Servicios = () => {
   return (
-    <section id="servicios" className="py-16 bg-gray-100 dark:bg-gray-800">
-      <div className="mt-3 max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+    <section id="servicios" className=" relative py-16 h-full md:h-full bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('./img/fondos/Nosotros.jpg')" }}>
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className=" relative mt-3 max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-8 text-white dark:text-white">
           Nuestros Servicios
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

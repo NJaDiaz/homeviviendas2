@@ -37,7 +37,7 @@ const NavLinks = () => {
           whileHover="hover"
           variants={linkVariants}
         >
-          <Link href="/#servicios" aria-current="page">
+          <Link href="./#servicios" aria-current="page">
             Servicios
           </Link>
         </motion.div>

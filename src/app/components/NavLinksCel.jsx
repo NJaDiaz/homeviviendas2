@@ -45,16 +45,16 @@ const NavLinksMobile = () => {
                 className="flex flex-col items-center p-4 bg-white dark:bg-gray-900"
               >
                 <DropdownItem className="w-full text-center py-2">
-                  <Link href="/#nosotros" className="text-gray-800 dark:text-gray-100">Nosotros</Link>
+                  <Link href="./#nosotros" className="text-gray-800 dark:text-gray-100">Nosotros</Link>
                 </DropdownItem>
                 <DropdownItem className="w-full text-center py-2">
-                  <Link href="/#servicios" className="text-gray-800 dark:text-gray-100">Servicios</Link>
+                  <Link href="./#servicios" className="text-gray-800 dark:text-gray-100">Servicios</Link>
                 </DropdownItem>
                 <DropdownItem className="w-full text-center py-2">
-                  <Link href="/#proyectos" className="text-gray-800 dark:text-gray-100">Proyectos</Link>
+                  <Link href="./#proyectos" className="text-gray-800 dark:text-gray-100">Proyectos</Link>
                 </DropdownItem>
                 <DropdownItem className="w-full text-center py-2">
-                  <Link href="/contacto" className="text-gray-800 dark:text-gray-100">Contacto</Link>
+                  <Link href="./contacto" className="text-gray-800 dark:text-gray-100">Contacto</Link>
                 </DropdownItem>
                 <DropdownItem className="w-full text-center py-2">
                   <Button
