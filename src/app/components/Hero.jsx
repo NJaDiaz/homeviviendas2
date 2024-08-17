@@ -66,7 +66,7 @@ const HeroCarousel = () => {
           variants={slideVariants}
           transition={{ duration: 1 }}
         >
-          <div className="relative z-10">
+          <div className="relative z-10 mt-3">
             <h1 className="text-4xl md:text-6xl font-bold">{slide.title}</h1>
             {slide.description && (
               <p className="mt-4 text-lg md:text-xl">{slide.description}</p>

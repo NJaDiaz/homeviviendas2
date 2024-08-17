@@ -88,7 +88,7 @@ export const Contacto = () => {
             className="h-20 lg:block lg:relative lg:w-full lg:h-60  " 
           >
             <img
-              src="/img/contacto.jpg"
+              src="./img/contacto.jpg"
               alt="Constructora"
               className="rounded-lg shadow-lg object-cover"
             />
