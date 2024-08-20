@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const slides = [
@@ -40,17 +39,21 @@ const slideVariants = {
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isFirefox, setIsFirefox] = useState(false);
 
   useEffect(() => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    setIsFirefox(userAgent.indexOf("firefox") > -1);
+
     const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 6000); 
+      setCurrentSlide(prevSlide => (prevSlide + 1) % slides.length);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className={`relative h-screen overflow-hidden ${isFirefox ? "no-transition" : ""}`}>
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url('./img/fondos/fondo.jpg')` }}

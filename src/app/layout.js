@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer";
 import IconWssp from "./components/IconWssp"; 
+import OfertaIcono from "./components/OfertaIcono";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <footer>
           <Footer />
         </footer>
+        <OfertaIcono />
         <IconWssp /> 
       </body>
     </html>

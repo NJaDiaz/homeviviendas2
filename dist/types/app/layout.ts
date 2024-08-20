@@ -1,4 +1,4 @@
-// File: C:\Users\Javi\Desktop\Proyectos\homeviviendas\src\app\layout.js
+// File: /home/javi/Documentos/Proyectos/homeviviendas2/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

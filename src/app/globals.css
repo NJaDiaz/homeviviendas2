@@ -77,3 +77,10 @@ body {
 .display {
   display: none;
 }
+
+@-moz-document url-prefix() {
+  .hero-carousel .slide {
+    /* Ajusta o desactiva las transiciones en Firefox */
+    transition: none !important;
+  }
+}

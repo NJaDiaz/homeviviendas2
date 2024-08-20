@@ -60,7 +60,7 @@ const Footer = () => {
                   href="https://www.instagram.com/home.viviendas/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" items-centertext-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-600"
+                  className="text-pink-600 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-600"
                 >
                   <FaInstagram className="text-2xl" />
                 </a>
