@@ -79,15 +79,15 @@ const NavLinksMobile = () => {
                         <DropdownMenu className="p-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-100">
                           <DropdownItem className="flex items-center space-x-2">
                             {icons.houseClassic}
-                            <span>Chalet Clásico</span>
+                            <Link href="/chaletClasico" className="text-gray-800 dark:text-gray-100">Chalet Clásico</Link>
                           </DropdownItem>
                           <DropdownItem className="flex items-center space-x-2 mt-2">
                             {icons.houseMinimal}
-                            <span>Chalet Minimalista</span>
+                            <Link href="/chaletMinimalista" className="text-gray-800 dark:text-gray-100">Chalet Minimalista</Link>
                           </DropdownItem>
                           <DropdownItem className="flex items-center space-x-2 mt-2">
                             {icons.houseEstancia}
-                            <span>Chalet Estancia</span>
+                            <Link href="/chaletEstancia" className="text-gray-800 dark:text-gray-100">Chalet Estancia</Link>
                           </DropdownItem>
                         </DropdownMenu>
                       </motion.div>

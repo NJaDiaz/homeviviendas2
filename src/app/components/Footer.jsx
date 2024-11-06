@@ -32,19 +32,19 @@ const Footer = () => {
               <div className="flex flex-col items-center lg:items-start space-y-3">
                 <div className="flex items-center space-x-2">
                   <FaPhoneAlt className="text-xl text-gray-700 dark:text-gray-300" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">2664250349</span>
+                  <a href="tel:+542664250349"><span className="text-sm text-gray-700 dark:text-gray-300">2664250349</span></a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <FaPhoneAlt className="text-xl text-gray-700 dark:text-gray-300" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">2664846784</span>
+                 <a href="tel:+542664846784"> <span className="text-sm text-gray-700 dark:text-gray-300">2664846784</span></a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <FaEnvelope className="text-xl text-gray-700 dark:text-gray-300" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">info@homeviviendas.com</span>
+                  <a href="mailto:info@homeviviendas.com"><span className="text-sm text-gray-700 dark:text-gray-300">info@homeviviendas.com</span></a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <FaWhatsapp className="text-xl text-green-400 dark:text-green-300" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">+54 9 2664 250349</span>
+                  <a href="https://wa.me/2664250349"><span className="text-sm text-gray-700 dark:text-gray-300">+54 9 2664 250349</span></a>
                 </div>
               </div>
               <div className="flex justify-center lg:justify-start space-x-4 mt-4">

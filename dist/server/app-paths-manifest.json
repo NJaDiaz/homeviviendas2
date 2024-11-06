@@ -1,5 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/Ofertas/page": "app/Ofertas/page.js"
+  "/chaletEstancia/page": "app/chaletEstancia/page.js",
+  "/chaletMinimalista/page": "app/chaletMinimalista/page.js",
+  "/chaletClasico/page": "app/chaletClasico/page.js",
+  "/contacto/page": "app/contacto/page.js",
+  "/page": "app/page.js"
 }

@@ -60,9 +60,9 @@ const NavLinks = () => {
           aria-label="Productos"
           className="w-[370px] bg-light-mode dark:bg-dark-mode flex flex-col items-center justify-center rounded-xl"
         >
-          <DropdownItem startContent={icons.houseClassic}>Chalet Clásico</DropdownItem>
-          <DropdownItem startContent={icons.houseMinimal}>Chalet Minimalista</DropdownItem>
-          <DropdownItem startContent={icons.houseEstancia}>Chalet Estancia</DropdownItem>
+          <DropdownItem startContent={icons.houseClassic}><Link href="/chaletClasico" className="text-gray-800 dark:text-gray-100">Chalet Clásico</Link></DropdownItem>
+          <DropdownItem startContent={icons.houseMinimal}><Link href="/chaletMinimalista" className="text-gray-800 dark:text-gray-100">Chalet Minimalista</Link></DropdownItem>
+          <DropdownItem startContent={icons.houseEstancia}><Link href="/chaletEstancia" className="text-gray-800 dark:text-gray-100">Chalet Estancia</Link></DropdownItem>
         </DropdownMenu>
       </Dropdown>
       <NavbarItem>

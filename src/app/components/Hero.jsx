@@ -1,102 +1,77 @@
-"use client";
+"use client"; 
 
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-const slides = [
-  {
-    title: "Bienvenido a tu nuevo hogar",
-    description: "Descubre el lugar donde comienzan tus sueños.",
-    buttonText: "Síguenos en nuestras redes",
-    buttonHref: "#",
-    icons: [
-      { icon: FaFacebookF, href: "https://www.facebook.com/profile.php?id=100083484181892" },
-      { icon: FaInstagram, href: "https://www.instagram.com/home.viviendas/" }
-    ]
-  },
-  {
-    title: "No dejes pasar esta oportunidad increíble",
-    description: "",
-    buttonText: "Contacto",
-    buttonHref: "/contacto",
-    icons: []
-  },
-  {
-    title: "El siguiente cambio puede ser el tuyo",
-    description: "",
-    buttonText: "Proyectos",
-    buttonHref: "/proyectos",
-    icons: []
-  }
-];
-
-const slideVariants = {
-  enter: { opacity: 0, x: 100 },
-  center: { opacity: 1, x: 0 },
-  exit: { opacity: 0, x: -100 }
-};
-
-const HeroCarousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isFirefox, setIsFirefox] = useState(false);
+const Hero = () => {
+  const [showSecondaryText, setShowSecondaryText] = useState(false);
 
   useEffect(() => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    setIsFirefox(userAgent.indexOf("firefox") > -1);
-
     const interval = setInterval(() => {
-      setCurrentSlide(prevSlide => (prevSlide + 1) % slides.length);
-    }, 6000);
+      setShowSecondaryText((prev) => !prev);
+    }, 8000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); 
   }, []);
 
   return (
-    <div className={`relative h-screen overflow-hidden ${isFirefox ? "no-transition" : ""}`}>
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('./img/fondos/fondo.jpg')` }}
+    <section className="relative h-screen bg-cover bg-center bg-[url('/img/fondos/fondo.jpg')] flex items-center justify-center text-center">
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className="relative z-10 text-white px-6"
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-      </div>
-      {slides.map((slide, index) => (
-        <motion.div
-          key={index}
-          className={`absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 md:px-8 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
-          initial="enter"
-          animate={index === currentSlide ? "center" : "exit"}
-          variants={slideVariants}
-          transition={{ duration: 1 }}
-        >
-          <div className="relative z-10 mt-3">
-            <h1 className="text-4xl md:text-6xl font-bold">{slide.title}</h1>
-            {slide.description && (
-              <p className="mt-4 text-lg md:text-xl">{slide.description}</p>
-            )}
-            <div className="mt-9">
-              {slide.icons.length > 0 ? (
-                <div className="flex justify-center gap-4">
-                  {slide.icons.map((icon, idx) => (
-                    <a key={idx} href={icon.href} className="text-white hover:text-gray-300">
-                      <icon.icon className="ml-2 text-2xl" />
-                    </a>
-                  ))}
-                </div>
-              ) : (
-                <a
-                  href={slide.buttonHref}
-                  className="px-8 py-3 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gray-200"
-                >
-                  {slide.buttonText}
-                </a>
-              )}
+        {!showSecondaryText ? (
+          <motion.div
+            key="text1"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 1 }}
+            className="space-y-4"
+          >
+            <h1 className="text-4xl md:text-6xl font-bold">Bienvenido a tu nuevo hogar</h1>
+            <p className="text-xl md:text-2xl">Descubre el lugar donde comienzan tus sueños.</p>
+            <p className="text-lg">Síguenos en nuestras redes:</p>
+            <div className="flex justify-center space-x-6 mt-4">
+              <a href="https://www.facebook.com/profile.php?id=100083484181892" target="_blank" rel="noopener noreferrer">
+                <FaFacebookF className="text-2xl hover:text-blue-600 transition duration-300" />
+              </a>
+              <a href="https://www.instagram.com/home.viviendas/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-2xl hover:text-pink-500 transition duration-300" />
+              </a>
             </div>
-          </div>
-        </motion.div>
-      ))}
-    </div>
+            <a href="/contacto" className="inline-block mt-8 px-8 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-300">
+              Contacto
+            </a>
+          </motion.div>
+        ) : (
+          <motion.div
+            key="text2"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 1 }}
+            className="space-y-4"
+          >
+            <h1 className="text-4xl md:text-6xl font-bold">No dejes pasar esta oportunidad increíble</h1>
+            <p className="text-xl md:text-2xl">El siguiente cambio puede ser el tuyo.</p>
+            <div className="flex justify-center space-x-6 mt-4">
+              <a href="/contacto" className="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-300">
+                Contacto
+              </a>
+              <a href="#proyectos" className="inline-block px-8 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition duration-300">
+                Proyectos
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </motion.div>
+    </section>
   );
 };
 
-export default HeroCarousel;
+export default Hero;

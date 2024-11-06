@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <footer>
           <Footer />
         </footer>
-        <OfertaIcono />
+        {/* <OfertaIcono /> */}
         <IconWssp /> 
       </body>
     </html>

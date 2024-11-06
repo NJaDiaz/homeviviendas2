@@ -11,15 +11,25 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/Ofertas/page": [
+    "/chaletEstancia/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Ofertas/page.js"
+      "static/chunks/app/chaletEstancia/page.js"
     ],
-    "/_not-found/page": [
+    "/chaletMinimalista/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/chaletMinimalista/page.js"
+    ],
+    "/chaletClasico/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/chaletClasico/page.js"
+    ],
+    "/contacto/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contacto/page.js"
     ]
   }
 }

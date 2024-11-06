@@ -44,13 +44,13 @@ export const Contacto = () => {
                   <span>Teléfonos:</span>
                 </p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  <a href=""
+                  <a href="tel:+542664250349"
                   className="flex items-center justify-center lg:justify-start">
                     <FaPhoneAlt className="mr-2 items-center text-blue-600 dark:text-blue-400"  />
                     <strong>2664250349</strong></a>
                 </p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  <a href=""
+                  <a href="tel:+542664846784"
                   className="flex items-center justify-center lg:justify-start">
                     <FaPhoneAlt className="mr-2 items-center text-blue-600 dark:text-blue-400"  />
                     <strong>2664846784</strong></a>
@@ -60,7 +60,7 @@ export const Contacto = () => {
                 <p className="text-lg mb-2">Síguenos para enterarte de cada novedad en:</p>
                 <div className="flex justify-center lg:justify-start space-x-4">
                   <a
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/profile.php?id=100083484181892"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-600"
@@ -68,7 +68,7 @@ export const Contacto = () => {
                     Facebook <FaFacebookF className="ml-2 text-2xl" />
                   </a>
                   <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/home.viviendas/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-600"
